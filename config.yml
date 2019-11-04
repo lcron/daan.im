@@ -1,0 +1,8 @@
+baseURL: https://daan.im
+languageCode: zh-cn
+
+title: 答案
+
+params:
+ subtitle: 快速地找到答案
+ 

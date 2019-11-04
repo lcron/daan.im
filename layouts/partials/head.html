@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<title>
+{{- if not (.IsHome) }}
+ {{- $t := T .Title -}}
+ {{- if eq $t "" -}}
+   {{- $t := .Title -}}
+     {{- if not ( eq $t "" ) -}}
+     {{- $t -}}
+     {{- print " | " -}}
+   {{- end -}}
+ {{- end -}}
+{{- end -}}
+ 
+{{- .Site.Title -}}
+</title>
+<link rel="canonical" href="{{ .Permalink }}">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+{{ hugo.Generator }}
+
